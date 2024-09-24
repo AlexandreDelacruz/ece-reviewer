@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fefffe;
   font-family: "Montserrat", sans-serif;
@@ -67,17 +71,90 @@ body {
   color: blue;
 }
 
+.topic {
+  margin: 0 50px;
+}
+.topic h1 {
+  margin: 10px 0;
+}
+.topic p {
+  margin: 0;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr a {
+  text-decoration: none;
+  color: #000;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.course {
+  margin: 0;
+  padding: 20px 0;
+}
+.course h3 {
+  margin: 0;
+}
+
+.mcq {
+  padding: 10px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
 .question {
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.question p {
+  margin: 10px 0 0 0;
 }
 .question li {
   list-style: none;
+  margin: 0;
 }
 .question .answer, .question .solution {
   display: none;
+}
+.question .answer p, .question .solution p {
+  text-align: justify;
+  text-indent: 20px;
+  margin: 10px 0;
 }
 .question .dropdown {
   cursor: pointer;
   color: blue;
   text-decoration: underline;
+  margin: 10px 0 0 0;
 }/*# sourceMappingURL=styles.css.map */

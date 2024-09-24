@@ -26,7 +26,90 @@
             <a href="esat.html">ESAT</a>
         </div>
     </div>
-    
+    <div class="topic">
+        <h1>Mathematics</h1>
+        <p>Weight: 20%</p>
+        <p>Number of Items: 100</p>
+        <br>
+        <div class="courses">
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Courses</th>
+                    <th>Weight</th>
+                    <th>Number of Items</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#differential-calculus">Differential Calculus</a></td>
+                    <td>3%</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><a href="#integral-calculus"></a>Integral Calculus</a></td>
+                    <td>3%</td>
+                    <td>15</td>
+
+                </tr>
+                <tr>
+
+                    <td><a href="#differential-equations"></a>Differential Equations</a></td>
+                    <td>3%</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><a href="#advanced-engineering-mathematics-for-ece"></a>Advanced Engineering Mathematics for ECE</a></td>
+
+                    <td>3%</td>
+
+                    <td>15</td>
+
+                </tr>
+                <tr>
+                    <td><a href="#engineering-data-analysis"></a>Engineering Data Analysis</a></td>
+                    <td>3%</td>
+
+                    <td>15</td>
+                </tr>
+
+                <tr>
+
+                    <td><a href="#electromagnetics"></a>Electromagnetics</a></td>
+
+                    <td>1.8%</td>
+
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#signals-spectra-signal-processing"></a>Signals, Spectra & Signal Processing</a></td>
+                    <td>1.6%</td>
+
+                    <td>8</td>
+
+                </tr>
+
+                <tr>
+                    <td><a href="#feedback-and-control-systems"></a>Feedback and Control Systems</a></td>
+                    <td>1.6%</td>
+                    <td>8</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+        </div>
+        <br>
+    </div>
+    <div class="mcq">
+    <div class="course" id="differential-calculus">
+        <h3>Differential Calculus</h3>
+    </div>
     <div class="question">
         <p>1. Find the domain of the given function: \( f(x) = \sqrt{4 - x} + \frac{1}{\sqrt{x^2 - 1}} \).</p>
         <ul>
@@ -37,17 +120,62 @@
         </ul>
         <div class="dropdown" onclick="toggleAnswer('answer1')">View Answer</div>
         <div id="answer1" class="answer">
-            <p>Answer: B. \((-∞, -4) ∪ (-1, 1]\)</p>
+            <p>Answer: <strong>D. \((-∞, -1) ∪ (1, 4]\)</strong></p>
             <div class="dropdown" onclick="toggleSolution('solution1')">View Solution</div>
             <div id="solution1" class="solution">
-                <p>The domain of \( f(x) \) is determined by the conditions under which the function is defined. 
-                    The function \( f(x) = \sqrt{4 - x} + \frac{1}{\sqrt{x^2 - 1}} \) is defined if and only if the following conditions are met:
-                    1. \( 4 - x \geq 0 \), which implies \( x \leq 4 \).
-                    2. \( x^2 - 1 > 0 \), which implies \( x > 1 \) or \( x < -1 \).
-                    Combining these conditions, we get the domain of \( f(x) \) as \((-∞, -4) ∪ (-1, 1]\).</p>
+                <h4>1. Square Root Condition:</h4>
+                <p>For \( \sqrt{4 - x} \), the expression inside the square root must be non-negative, as square roots of negative numbers are not real.</p>
+                <p>\[
+                4 - x \geq 0
+                \]</p>
+                <p>Solving for \( x \):</p>
+                <p>\[
+                x \leq 4
+                \]</p>
+                <p>So, \( x \) must be less than or equal to 4.</p>
+                
+                <h4>2. Rational Expression Condition:</h4>
+                <p>For \( \frac{1}{x^2 - 1} \), the denominator must not be zero, as division by zero is undefined. Therefore:</p>
+                <p>\[
+                x^2 - 1 \neq 0
+                \]</p>
+                <p>Solving for \( x \):</p>
+                <p>\[
+                x^2 \neq 1 \quad \Rightarrow \quad x \neq \pm 1
+                \]</p>
+                <p>Additionally, for \( \frac{1}{\sqrt{a}} \) to be defined, the expression under the square root must be strictly positive. Thus:</p>
+                <p>\[
+                x^2 - 1 > 0
+                \]</p>
+                <p>Solving for \( x \):</p>
+                <p>\[
+                x^2 > 1 \quad \Rightarrow \quad x > 1 \quad \text{or} \quad x < -1
+                \]</p>
+                
+                <h4>3. Combining the Conditions:</h4>
+                <p>From the square root condition, we have \( x \leq 4 \). From the rational expression condition, we know \( x \neq \pm 1 \) and \( x > 1 \) or \( x < -1 \).</p>
+                <p>We can now summarize the domain of the function using a number line:</p>
+                <ul>
+                    <li>For the square root, \( x \) must be less than or equal to 4.</li>
+                    <li>For the rational expression, \( x \) must exclude \( \pm 1 \) and must satisfy \( x > 1 \) or \( x < -1 \).</li>
+                </ul>
+                <p>The domain can be visualized as:</p>
+                <p>\[
+                \begin{aligned}
+                (-\infty, -1) & \quad \text{(excluding -1)} \\
+                (1, 4] & \quad \text{(including 4 but excluding 1)}
+                \end{aligned}
+                \]</p>
+                
+                <h4>4. Final Domain:</h4>
+                <p>The domain of the function, when combining all conditions, is:</p>
+                <p>\[
+                (-\infty, -1) \cup (1, 4]
+                \]</p>
             </div>
         </div>
     </div>
+    <hr>
     <div class="question">
         <p>2. Evaluate the limit: \( \lim_{x \to 2} \frac{x^3-8}{4x^2-16} \).</p>
         <ul>
@@ -61,12 +189,37 @@
             <p>Answer: <strong>B. 0.75</strong></p>
             <div class="dropdown" onclick="toggleSolution('solution2')">View Solution</div>
             <div id="solution2" class="solution">
-                <p>The limit of the function \( \frac{x^3-8}{4x^2-16} \) as \( x \) approaches 2 can be evaluated by substituting \( x = 2 \) into the function. 
+                <p>The limit of the function can be obtained by typing it to the calculator and use test numbers for x. The test number should be close to the value that x is approaching. For example, if we use <strong>x = 1.999</strong> as it approaches 2 from the left, the function will give us <strong>0.75</strong>.
+                    On the other hand, if we use <strong>x = 2.001</strong> as it approaches 2 from the right, the function will give us <strong>0.75</strong>. Therefore, the limit of the function is <strong>0.75</strong>. If the two test numbers give us different values, then the limit does not exist.
                 </p>
+                
             </div>
         </div>
     </div>
+    <hr>
+    <div class="question">
+        <p>3. Evaluate the limit: \( \lim_{x \to 1} \frac{x}{x-1} \).</p>
+        <ul>
+            <li>A. \( \infty \)</li>
+            <li>B. \( -\infty \)</li>
+            <li>C. 1</li>
+            <li>D. DNE</li>
+        </ul>
+        <div class="dropdown" onclick="toggleAnswer('answer3')">View Answer</div>
+        <div id="answer3" class="answer">
+            <p>Answer: <strong>D. DNE</strong></p>
+            <div class="dropdown" onclick="toggleSolution('solution3')">View Solution</div>
+            <div id="solution3" class="solution">
+                <p> Using the test numbers <strong>x = 0.999</strong> and <strong>x = 1.001</strong>, we can see that the function approaches positive and negative infinity, respectively. Therefore, the limit <strong>does not exist</strong>.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <hr>
     <!-- Add more questions here -->
+    </div>
+
     <script src="../js/mcq.js"></script> 
 </body>
 
