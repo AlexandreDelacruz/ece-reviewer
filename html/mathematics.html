@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Reviewer</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="title">
+            <a href="home.html">
+            <h2>ECE Reviewer</h2>
+            </a>
+        </div>
+
+        <div class="subs">
+            <a href="mathematics.html">Mathematics</a>
+            <a href="geas.html">GEAS</a>
+            <a href="electronics.html">Electronics</a>
+            <a href="esat.html">ESAT</a>
+        </div>
+    </div>
+    
+    <div class="question">
+        <p>1. Find the domain of the given function: \( f(x) = \sqrt{4 - x} + \frac{1}{\sqrt{x^2 - 1}} \).</p>
+        <ul>
+            <li>A. \((-∞, -1] ∪ (-4, 1]\)</li>
+            <li>B. \((-∞, -4) ∪ (-1, 1]\)</li>
+            <li>C. \((-4, -1) ∪ (1, ∞)\)</li>
+            <li>D. \((-∞, -1) ∪ (1, 4]\)</li>
+        </ul>
+        <div class="dropdown" onclick="toggleAnswer('answer1')">View Answer</div>
+        <div id="answer1" class="answer">
+            <p>Answer: B. \((-∞, -4) ∪ (-1, 1]\)</p>
+            <div class="dropdown" onclick="toggleSolution('solution1')">View Solution</div>
+            <div id="solution1" class="solution">
+                <p>The domain of \( f(x) \) is determined by the conditions under which the function is defined. 
+                    The function \( f(x) = \sqrt{4 - x} + \frac{1}{\sqrt{x^2 - 1}} \) is defined if and only if the following conditions are met:
+                    1. \( 4 - x \geq 0 \), which implies \( x \leq 4 \).
+                    2. \( x^2 - 1 > 0 \), which implies \( x > 1 \) or \( x < -1 \).
+                    Combining these conditions, we get the domain of \( f(x) \) as \((-∞, -4) ∪ (-1, 1]\).</p>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <p>2. Evaluate the limit: \( \lim_{x \to 2} \frac{x^3-8}{4x^2-16} \).</p>
+        <ul>
+            <li>A. 0.25</li>
+            <li>B. 0.75</li>
+            <li>C. 1.5</li>
+            <li>D. DNE</li>
+        </ul>
+        <div class="dropdown" onclick="toggleAnswer('answer2')">View Answer</div>
+        <div id="answer2" class="answer">
+            <p>Answer: <strong>B. 0.75</strong></p>
+            <div class="dropdown" onclick="toggleSolution('solution2')">View Solution</div>
+            <div id="solution2" class="solution">
+                <p>The limit of the function \( \frac{x^3-8}{4x^2-16} \) as \( x \) approaches 2 can be evaluated by substituting \( x = 2 \) into the function. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Add more questions here -->
+    <script src="../js/mcq.js"></script> 
+</body>
+
+
+</html>
